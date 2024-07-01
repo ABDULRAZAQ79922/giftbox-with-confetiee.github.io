@@ -1,0 +1,66 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.cute-container {
+    text-align: center;
+}
+
+.cute-box {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    background-color: #eccd52;
+    margin-bottom: 20px;
+}
+
+.cute-lid {
+    width: 200px;
+    height: 20px;
+    background-color: #ff3d3d;
+    position: absolute;
+    top: -20px;
+    left: 0;
+    transition: all 0.5s;
+}
+
+.cute-body {
+    width: 100%;
+    height: 100%;
+}
+
+.cute-confetti {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    margin-left: 50px;
+    background-color: #ffd700;
+    animation: cuteConfettiFall 1s linear forwards;
+}
+
+@keyframes cuteConfettiFall {
+    to {
+        transform: translateY(500px);
+        opacity: 0;
+    }
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ff3d3d;
+}
